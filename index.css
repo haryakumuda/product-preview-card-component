@@ -1,0 +1,113 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    background-color: white;
+    width: 550px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.perfume-image{
+    background-color: aqua;
+    width: 50%;
+    object-fit: cover;
+
+}
+.text{
+    background-color: white(255, 99, 71, 0.867);
+    width: 50%;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 40%;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+}
+#text-header{
+    color: grey;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 10px;
+    margin-top: 0;
+}
+#text-title{
+    color: black;
+    font-family: 'Fraunces';
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 27px;
+}
+#text-desc{
+    font-size: 12px;
+    color: grey;
+    line-height: 23px;
+}
+
+.price-container{
+    display: flex;
+}
+#text-price{
+    color: green;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-self: center;
+}
+#text-before-price{
+    color: grey;
+    font-size: 13px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (max-width:450px) {
+    .card{
+        flex-direction: column;
+        width: 380px;
+        height: 600px;
+    }
+    .perfume-image{
+        background-color: aqua;
+        height: 40%;
+        width: auto;
+        object-fit: cover;
+    
+    }
+    .text{
+        background-color: white;
+        height: 60%;
+        width: 84%;
+
+    }
+    .button{
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        height: 40px;
+        width: 100%;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        bottom: -30px;
+    }
+}
